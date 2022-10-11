@@ -4,6 +4,7 @@ const {gameOptions, againOptions} = require('./options');
 const token = '5745798158:AAE6IihSFwl1q_2h5jxC09pAD0wP2L8vVN0';
 
 const ramazan = 799306687;
+const groop = -806998404;
 const bot = new TelegramApi(token, {polling: true});
 
 const chats = {};
@@ -60,7 +61,7 @@ const start = () => {
             return startGame(chatId);
         }
 
-        bot.sendMessage(ramazan, `${firstName} ${lastName} @${userName} Сообщение: ${text}`);
+        bot.sendMessage(groop, `${firstName} ${lastName} @${userName} Сообщение: ${text}`);
 
         return bot.sendMessage(chatId, "Я тебя не понимаю, попробуй еще раз!)");
     });
